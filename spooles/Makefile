@@ -13,6 +13,7 @@ build/libspooles.a:
 	cd build ; patch -p0 < ../patches/patch-Tree+src+makeGlobalLib
 	cd build ; patch -p0 < ../patches/patch-Utilities+src+makeGlobalLib
 	cd build ; patch -p0 < ../patches/patch-makefile
+	cd build ; patch -p0 < ../patches/patch-timezone
 	cd build ; ${MAKE} global -f makefile
 	cd build ; cp spooles.a libspooles.a
 	
