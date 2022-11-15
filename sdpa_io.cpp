@@ -399,7 +399,7 @@ void IO::read(FILE* fpData, int m,
 		  qd_real tmp;
                  fscanf(fpData,"%*[^0-9+-]%[^,} \t\n]",mpbuffer); tmp = mpbuffer;
 		  if (tmp!=0.0) {
-			LP_CNonZeroCount[blockNumber[l2]+j] = !LP_CNonZeroCount[blockNumber[l2]+j];
+			LP_CNonZeroCount[blockNumber[l2]+j] = true;
 		  }
 		}
 	  } else {
